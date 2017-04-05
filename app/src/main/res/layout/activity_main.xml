@@ -1,0 +1,376 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/LayoutMain"
+    android:id="@+id/activity_main">
+
+    <LinearLayout
+        style="@style/LinearLayout"
+        tools:context="com.example.android.spacequizandroid.MainActivity">
+
+        <TextView
+            style="@style/MainHeading"/>
+
+        <ImageView
+            style="@style/HeadingImage"
+            android:src="@drawable/earth2"/>
+
+
+
+
+        // INTRO-TEXT
+        <TextView
+            style="@style/HeadingText"
+            android:text="Test your space knowledge with the following quiz"/>
+
+
+        //Enter Your name here
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/name_field"
+            android:hint="Click Here To Add Your Name"/>
+
+
+
+
+
+        // QUESTION 1 - FIRST SATELLITE
+        // Q1 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/sputnik" />
+
+        // Q1 Text
+        <TextView
+            style="@style/Text"
+            android:text="1. What is the name of the first satellite sent into space?"/>
+
+        // Q1 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q1A1"
+                android:text="Telstar"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q1A2"
+                android:text="Vanguard"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q1A3"
+                android:onClick="question1"
+                android:text="Sputnik"/>
+        </RadioGroup>
+
+
+
+
+
+        // QUESTION 2 - SECOND MOON LANDER
+        // Q2 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/buzz"/>
+
+        // Q2 Text
+        <TextView
+            style="@style/Text"
+            android:text="2. Who was the second person to set foot on the Moon?"
+            />
+
+        // Q2 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q2A1"
+                android:text="Buzz Aldrin"
+                android:onClick="question2"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q2A2"
+                android:text="Neil Armstrong"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q2A3"
+                android:text="Michael Collins"/>
+        </RadioGroup>
+
+
+
+
+        // QUESTION 3 - HALEYS COMET
+        // Q3 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/halleys"/>
+
+        // Q3 Text
+        <TextView
+            style="@style/Text"
+            android:text="3. When will Halley’s Comet will be visible from Earth again?"/>
+
+        // Q3 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q3A1"
+                android:text="2021"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q3A2"
+                android:text="2041"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q3A3"
+                android:text="2061"
+                android:onClick="question3"/>
+        </RadioGroup>
+
+
+
+
+
+
+        // QUESTION 4 - (Text Answer) - First Dog In Space
+        // Q4 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/laika"/>
+
+        // Q4 Text
+        <TextView
+            style="@style/TextAnswerText"
+            android:text="4. What was the name of the first dog in space?"/>
+
+        // Q4 Answer with text
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/Q4A1"
+            android:hint="Type Your Answer Here"
+            android:onClick="question4"/>
+
+
+
+
+
+        // QUESTION 5 - FIST PERSON IN SPACE (TEXT ANSWER)
+        // Q5 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/yuri"/>
+
+        // Q5 Text
+        <TextView
+            style="@style/TextAnswerText"
+            android:text="5. Who was the first person to reach space?"/>
+
+        // Q5 Answer with text
+        <EditText
+            style="@style/EditText"
+            android:id="@+id/Q5A1"
+            android:hint="Type Your Answer Here"
+            android:onClick="question5"/>
+
+
+
+
+
+        // QUESTION 6 - (Multi Answer Checkbox) - Sun Ray time
+        // Q6 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/rising"/>
+
+        // Q6 Text
+        <TextView
+            style="@style/Text"
+            android:text="6. How long do the sun's rays take to reach earth? (Select all that apply);" />
+
+        // Question 6 checkbox 1
+        <CheckBox
+            style="@style/CheckBox"
+            android:id="@+id/person1"
+            android:text="8 minutes"
+            android:onClick="question6"
+            />
+
+        // Question 6 checkbox 2
+        <CheckBox
+            style="@style/CheckBox"
+            android:id="@+id/person2"
+            android:text="480 Seconds"
+            android:onClick="question6"
+            />
+
+        // Question 6 checkbox 3
+        <CheckBox
+            style="@style/CheckBox"
+            android:id="@+id/person3"
+            android:text="480000 Milliseconds"
+            android:onClick="question6"
+            />
+
+
+
+
+
+        // QUESTION 7 - LARGEST PLANET
+        // Q7 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/jupiter"/>
+
+        // Q7 Text
+        <TextView
+            style="@style/Text"
+            android:text="7. Which is the largest planet in our solar system?"
+            />
+
+        // Q7 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q7A1"
+                android:text="Saturn"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q7A2"
+                android:text="Jupiter"
+                android:onClick="question7"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q7A3"
+                android:text="Uranus"/>
+        </RadioGroup>
+
+
+
+
+
+        // QUESTION 8 - CLOSEST PLANET TO SUN
+        // Q8 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/mercury"/>
+
+        // Q8 Text
+        <TextView
+            style="@style/Text"
+            android:text="8. Which planet is closest to the sun?"
+            />
+
+        // Q8 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q8A1"
+                android:text="Mercury"
+                android:onClick="question8"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q8A2"
+                android:text="Mars"/>
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q8A3"
+                android:text="Venus"
+                />
+        </RadioGroup>
+
+
+
+
+
+        // QUESTION 9 - Sun Is Made Of?
+        // Q9 Text
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/thesun1"/>
+
+        <TextView
+            style="@style/Text"
+            android:text="9. What is the Sun made of (Check all that apply);"/>
+
+        // Question 9 checkbox 1
+        <CheckBox
+            style="@style/CheckBox"
+            android:id="@+id/object1"
+            android:text="Hydrogen"
+            android:onClick="question9"
+            />
+
+        // Question 9 checkbox 2
+        <CheckBox
+            style="@style/CheckBox"
+            android:id="@+id/object2"
+            android:text="Helium"
+            android:onClick="question9"
+            />
+
+        // Question 9 checkbox 3
+        <CheckBox
+            style="@style/CheckBox"
+            android:id="@+id/object3"
+            android:text="Carbon"
+            android:onClick="question9"
+            />
+
+
+
+
+        // QUESTION 10 - FIRST WOMAN IN SPACE
+        // Q10 Image
+        <ImageView
+            style="@style/ImageNormal"
+            android:src="@drawable/valentina"/>
+
+        // Q10 Text
+        <TextView
+            style="@style/Text"
+            android:text="10. Who was the first woman to reach space?"
+            />
+
+        // Q10 Answers
+        <RadioGroup
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            style="@style/RadioGroup">
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q10A1"
+                android:text="Svetlana Savitskaya"
+                />
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q10A2"
+                android:text="Valentina Tereshkova"
+                android:onClick="question10"
+                />
+            <RadioButton
+                style="@style/RadioButton"
+                android:id="@+id/Q10A3"
+                android:text="Sally Ride"/>
+        </RadioGroup>
+
+
+
+        // SCORE BUTTON
+        <Button
+            style="@style/Button"
+            android:layout_gravity="center"
+            android:onClick="results"
+            android:text="Results"
+            />
+
+    </LinearLayout>
+
+</ScrollView>

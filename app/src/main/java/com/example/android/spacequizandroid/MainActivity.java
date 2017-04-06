@@ -12,11 +12,16 @@ public class MainActivity extends AppCompatActivity {
 
     int points = 0;
 
+
+
+
+
     @Override
     protected void onSaveInstanceState(Bundle outState) {
         outState.putInt("Q1A3", points);
     }
 
+    EditText laikaAnswer;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -26,6 +31,8 @@ public class MainActivity extends AppCompatActivity {
         if (savedInstanceState != null) {
             points = savedInstanceState.getInt("Q1A3");
         }
+
+        laikaAnswer = (EditText) findViewById(R.id.Q4A1);
     }
 
 
@@ -203,9 +210,10 @@ public class MainActivity extends AppCompatActivity {
     public int results(View View) {
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
-        Toast.makeText(getApplicationContext(), name + "! You got " + points + " points!", Toast.LENGTH_LONG).show();
+        Toast.makeText(getApplicationContext(), getString(R.string.hey) + name + getString(R.string.you) + points + getString(R.string.points), Toast.LENGTH_LONG).show();
         points = 0;
         return points;
+
     }
 }
 

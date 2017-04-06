@@ -1,3 +1,46 @@
 <resources>
     <string name="app_name">Space Quiz Android</string>
+    <string name="intro">Test your space knowledge with the following quiz</string>
+    <string name="name">Click Here To Add Your Name</string>
+    <string name="q1">1. What is the name of the first satellite sent into space?</string>
+    <string name="q1a1" translatable="false">Telstar</string>
+    <string name="q1a2" translatable="false">Vanguard</string>
+    <string name="q1a3" translatable="false">Sputnik</string>
+    <string name="q2">2. Who was the second person to set foot on the Moon?</string>
+    <string name="q2a1" translatable="false">Buzz Aldrin</string>
+    <string name="q2a2" translatable="false">Neil Armstrong</string>
+    <string name="q2a3" translatable="false">Michael Collins</string>
+    <string name="q3">3. When will Halley’s Comet will be visible from Earth again?</string>
+    <string name="q3a1" translatable="false">2021</string>
+    <string name="q3a2" translatable="false">2042</string>
+    <string name="q3a3" translatable="false">2061</string>
+    <string name="q4">4. What was the name of the first dog in space?</string>
+    <string name="q4a1">Type Your Answer Here</string>
+    <string name="q5">5. Who was the first person to reach space?</string>
+    <string name="q5a1">Type Your Answer Here</string>
+    <string name="q6">6. How long do the sun\'s rays take to reach earth? (Select all that apply);</string>
+    <string name="q6a1">8 minutes</string>
+    <string name="q6a2">480 Seconds</string>
+    <string name="q6a3">480000 Milliseconds</string>
+    <string name="q7">7. Which is the largest planet in our solar system?</string>
+    <string name="q7a1" translatable="false">Saturn</string>
+    <string name="q7a2" translatable="false">Jupiter</string>
+    <string name="q7a3" translatable="false">Uranus</string>
+    <string name="q8">8. Which planet is closest to the sun?</string>
+    <string name="q8a1" translatable="false">Mercury</string>
+    <string name="q8a2" translatable="false">Mars</string>
+    <string name="q8a3" translatable="false">Venus</string>
+    <string name="q9">9. What is the Sun made of (Check all that apply);</string>
+    <string name="q9a1">Hydrogen</string>
+    <string name="q9a2" translatable="false">Helium</string>
+    <string name="q9a3">Carbon</string>
+    <string name="q10">10. Who was the first woman to reach space?</string>
+    <string name="q10a1" translatable="false">Svetlana Savitskaya</string>
+    <string name="q10a2" translatable="false">Valentina Tereshkova</string>
+    <string name="q10a3" translatable="false">Sally Ride</string>
+    <string name="results">Results</string>
+    <string name="hey" translatable="false">Hey \u0020</string>
+    <string name="you">! You got \u0020</string>
+    <string name="points">\u0020 points out of 10!</string>
 </resources>
+

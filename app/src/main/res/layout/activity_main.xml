@@ -18,17 +18,17 @@
 
 
 
-        // INTRO-TEXT
+        // Write your name
         <TextView
             style="@style/HeadingText"
-            android:text="Test your space knowledge with the following quiz"/>
+            android:text="@string/intro"/>
 
 
         //Enter Your name here
         <EditText
             style="@style/EditText"
             android:id="@+id/name_field"
-            android:hint="Click Here To Add Your Name"/>
+            android:hint="@string/name"/>
 
 
 
@@ -38,12 +38,12 @@
         // Q1 Image
         <ImageView
             style="@style/ImageNormal"
-            android:src="@drawable/sputnik" />
+            android:src="@drawable/sputnik"/>
 
         // Q1 Text
         <TextView
             style="@style/Text"
-            android:text="1. What is the name of the first satellite sent into space?"/>
+            android:text="@string/q1"/>
 
         // Q1 Answers
         <RadioGroup
@@ -52,16 +52,16 @@
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q1A1"
-                android:text="Telstar"/>
+                android:text="@string/q1a1"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q1A2"
-                android:text="Vanguard"/>
+                android:text="@string/q1a2"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q1A3"
                 android:onClick="question1"
-                android:text="Sputnik"/>
+                android:text="@string/q1a3"/>
         </RadioGroup>
 
 
@@ -77,8 +77,7 @@
         // Q2 Text
         <TextView
             style="@style/Text"
-            android:text="2. Who was the second person to set foot on the Moon?"
-            />
+            android:text="@string/q2"/>
 
         // Q2 Answers
         <RadioGroup
@@ -87,16 +86,16 @@
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q2A1"
-                android:text="Buzz Aldrin"
+                android:text="@string/q2a1"
                 android:onClick="question2"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q2A2"
-                android:text="Neil Armstrong"/>
+                android:text="@string/q2a2"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q2A3"
-                android:text="Michael Collins"/>
+                android:text="@string/q2a3"/>
         </RadioGroup>
 
 
@@ -111,7 +110,7 @@
         // Q3 Text
         <TextView
             style="@style/Text"
-            android:text="3. When will Halley’s Comet will be visible from Earth again?"/>
+            android:text="@string/q3"/>
 
         // Q3 Answers
         <RadioGroup
@@ -120,15 +119,15 @@
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q3A1"
-                android:text="2021"/>
+                android:text="@string/q3a1"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q3A2"
-                android:text="2041"/>
+                android:text="@string/q3a2"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q3A3"
-                android:text="2061"
+                android:text="@string/q3a3"
                 android:onClick="question3"/>
         </RadioGroup>
 
@@ -146,13 +145,13 @@
         // Q4 Text
         <TextView
             style="@style/TextAnswerText"
-            android:text="4. What was the name of the first dog in space?"/>
+            android:text="@string/q4"/>
 
         // Q4 Answer with text
         <EditText
             style="@style/EditText"
             android:id="@+id/Q4A1"
-            android:hint="Type Your Answer Here"
+            android:hint="@string/q4a1"
             android:onClick="question4"/>
 
 
@@ -168,13 +167,13 @@
         // Q5 Text
         <TextView
             style="@style/TextAnswerText"
-            android:text="5. Who was the first person to reach space?"/>
+            android:text="@string/q5"/>
 
         // Q5 Answer with text
         <EditText
             style="@style/EditText"
             android:id="@+id/Q5A1"
-            android:hint="Type Your Answer Here"
+            android:hint="@string/q5a1"
             android:onClick="question5"/>
 
 
@@ -190,31 +189,28 @@
         // Q6 Text
         <TextView
             style="@style/Text"
-            android:text="6. How long do the sun's rays take to reach earth? (Select all that apply);" />
+            android:text="@string/q6"/>
 
         // Question 6 checkbox 1
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/person1"
-            android:text="8 minutes"
-            android:onClick="question6"
-            />
+            android:text="@string/q6a1"
+            android:onClick="question6"/>
 
         // Question 6 checkbox 2
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/person2"
-            android:text="480 Seconds"
-            android:onClick="question6"
-            />
+            android:text="@string/q6a2"
+            android:onClick="question6"/>
 
         // Question 6 checkbox 3
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/person3"
-            android:text="480000 Milliseconds"
-            android:onClick="question6"
-            />
+            android:text="@string/q6a3"
+            android:onClick="question6"/>
 
 
 
@@ -229,8 +225,7 @@
         // Q7 Text
         <TextView
             style="@style/Text"
-            android:text="7. Which is the largest planet in our solar system?"
-            />
+            android:text="@string/q7"/>
 
         // Q7 Answers
         <RadioGroup
@@ -239,16 +234,16 @@
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q7A1"
-                android:text="Saturn"/>
+                android:text="@string/q7a1"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q7A2"
-                android:text="Jupiter"
+                android:text="@string/q7a2"
                 android:onClick="question7"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q7A3"
-                android:text="Uranus"/>
+                android:text="@string/q7a3"/>
         </RadioGroup>
 
 
@@ -264,8 +259,7 @@
         // Q8 Text
         <TextView
             style="@style/Text"
-            android:text="8. Which planet is closest to the sun?"
-            />
+            android:text="@string/q8"/>
 
         // Q8 Answers
         <RadioGroup
@@ -274,17 +268,16 @@
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q8A1"
-                android:text="Mercury"
+                android:text="@string/q8a1"
                 android:onClick="question8"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q8A2"
-                android:text="Mars"/>
+                android:text="@string/q8a2"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q8A3"
-                android:text="Venus"
-                />
+                android:text="@string/q8a3"/>
         </RadioGroup>
 
 
@@ -299,31 +292,28 @@
 
         <TextView
             style="@style/Text"
-            android:text="9. What is the Sun made of (Check all that apply);"/>
+            android:text="@string/q9"/>
 
         // Question 9 checkbox 1
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/object1"
-            android:text="Hydrogen"
-            android:onClick="question9"
-            />
+            android:text="@string/q9a1"
+            android:onClick="question9"/>
 
         // Question 9 checkbox 2
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/object2"
-            android:text="Helium"
-            android:onClick="question9"
-            />
+            android:text="@string/q9a2"
+            android:onClick="question9"/>
 
         // Question 9 checkbox 3
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/object3"
-            android:text="Carbon"
-            android:onClick="question9"
-            />
+            android:text="@string/q9a3"
+            android:onClick="question9"/>
 
 
 
@@ -337,8 +327,7 @@
         // Q10 Text
         <TextView
             style="@style/Text"
-            android:text="10. Who was the first woman to reach space?"
-            />
+            android:text="@string/q10"/>
 
         // Q10 Answers
         <RadioGroup
@@ -347,18 +336,16 @@
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q10A1"
-                android:text="Svetlana Savitskaya"
-                />
+                android:text="@string/q10a1"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q10A2"
-                android:text="Valentina Tereshkova"
-                android:onClick="question10"
-                />
+                android:text="@string/q10a2"
+                android:onClick="question10"/>
             <RadioButton
                 style="@style/RadioButton"
                 android:id="@+id/Q10A3"
-                android:text="Sally Ride"/>
+                android:text="@string/q10a3"/>
         </RadioGroup>
 
 
@@ -368,8 +355,7 @@
             style="@style/Button"
             android:layout_gravity="center"
             android:onClick="results"
-            android:text="Results"
-            />
+            android:text="@string/results"/>
 
     </LinearLayout>
 

@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Space Quiz Android</string>
+    <string name="q1">1. Wie hieß der erste Satellit im Weltraum?</string>
+    <string name="points">Punkte von 10!</string>
+    <string name="name">Dein Name</string>
+    <string name="intro">"Teste dein Space-Wissen "</string>
+    <string name="q10">10. Wer war die erste Frau im Weltraum?</string>
+    <string name="q2">2. Wer war die zweite Person, die den Mond betreten hat?</string>
+    <string name="q3">3. Wann wird Halleys Komet wieder von der Erde aus sichtbar sein?</string>
+    <string name="q4">4. Wie hieß der erste Hund im Weltraum?</string>
+    <string name="q4a1">Antworte hier</string>
+    <string name="q5a1">Antworte hier</string>
+    <string name="q5">5. Wer war der erste Mensch im Weltraum?</string>
+    <string name="q6">6. Wie lange dauert es für Sonnenstrahlen die Erde zu erreichen? (Wählen Sie alle zutreffenden);</string>
+    <string name="q6a1">8 Minuten</string>
+    <string name="q6a2">480 Sekunden</string>
+    <string name="q6a3">480000 Millisekunden</string>
+    <string name="q7">7. Welches ist der größte Planet in unserem Sonnensystem?</string>
+    <string name="q8">8. Welcher Planet ist der Sonne am nächsten?</string>
+    <string name="q9">9. Aus was besteht die Sonne? (Überprüfen Sie alle zutreffend);</string>
+    <string name="q9a1">Wasserstoff</string>
+    <string name="q9a3">Kohlenstoff</string>
+    <string name="results">Ergebnisse</string>
+    <string name="you">\"\u0020 ! \u0020Du hast\"</string>
+</resources>

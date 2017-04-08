@@ -8,20 +8,39 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.Toast;
 
+import static com.example.android.spacequizandroid.R.string.points;
+
 public class MainActivity extends AppCompatActivity {
 
-    int points = 0;
-
-
+    int q1points = 0;
+    int q2points = 0;
+    int q3points = 0;
+    int q4points = 0;
+    int q5points = 0;
+    int q6points = 0;
+    int q7points = 0;
+    int q8points = 0;
+    int q9points = 0;
+    int q10points = 0;
 
 
 
     @Override
     protected void onSaveInstanceState(Bundle outState) {
-        outState.putInt("Q1A3", points);
+        super.onSaveInstanceState(outState);
+        outState.putInt("Q1A3", q1points);
+        outState.putInt("Q2A1", q2points);
+        outState.putInt("Q3A3", q3points);
+        outState.putInt("Q4A1", q4points);
+        outState.putInt("Q5A1", q5points);
+        outState.putInt("Q6A1", q6points);
+        outState.putInt("Q7A2", q7points);
+        outState.putInt("Q8A1", q8points);
+        outState.putInt("Q9A3", q9points);
+        outState.putInt("Q10A2", q10points);
     }
 
-    EditText laikaAnswer;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -29,10 +48,18 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         if (savedInstanceState != null) {
-            points = savedInstanceState.getInt("Q1A3");
+            q1points = savedInstanceState.getInt("Q1A3");
+            q2points = savedInstanceState.getInt("Q2A1");
+            q3points = savedInstanceState.getInt("Q3A3");
+            q4points = savedInstanceState.getInt("Q4A1");
+            q5points = savedInstanceState.getInt("Q5A1");
+            q6points = savedInstanceState.getInt("Q6A1");
+            q7points = savedInstanceState.getInt("Q7A2");
+            q8points = savedInstanceState.getInt("Q8A1");
+            q9points = savedInstanceState.getInt("Q9A3");
+            q10points = savedInstanceState.getInt("Q10A1");
         }
 
-        laikaAnswer = (EditText) findViewById(R.id.Q4A1);
     }
 
 
@@ -50,9 +77,9 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.Q1A3:
                 if (checked)
-                    points += 1;
+                    q1points += 1;
         }
-        return points;
+        return q1points;
     }
 
 
@@ -69,9 +96,9 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.Q2A1:
                 if (checked)
-                    points += 1;
+                    q2points += 1;
         }
-        return points;
+        return q2points;
     }
 
 
@@ -87,9 +114,9 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.Q3A3:
                 if (checked)
-                    points += 1;
+                    q3points += 1;
         }
-        return points;
+        return q3points;
     }
 
 
@@ -101,9 +128,9 @@ public class MainActivity extends AppCompatActivity {
     public int question4(View View) {
         EditText laikaAnswer = (EditText) findViewById(R.id.Q4A1);
         if (laikaAnswer.getText().toString().equals("Laika")) {
-            points += 1;
+            q4points += 1;
         }
-        return points;
+        return q4points;
     }
 
 
@@ -115,9 +142,9 @@ public class MainActivity extends AppCompatActivity {
     public int question5(View View) {
         EditText yuriAnswer = (EditText) findViewById(R.id.Q5A1);
         if (yuriAnswer.getText().toString().equals("Yuri Gagarin")) {
-            points += 1;
+            q5points += 1;
         }
-        return points;
+        return q5points;
     }
 
 
@@ -135,9 +162,9 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxPerson3 = (CheckBox) findViewById(R.id.person3);
         boolean checkedPerson3 = checkBoxPerson3.isChecked();
         if (checkedPerson1 && checkedPerson2 && checkedPerson3) {
-            points += 1;
+            q6points += 1;
         }
-        return points;
+        return q6points;
     }
 
 
@@ -152,9 +179,9 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.Q7A2:
                 if (checked)
-                    points += 1;
+                    q7points += 1;
         }
-        return points;
+        return q7points;
     }
 
 
@@ -168,9 +195,9 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.Q8A1:
                 if (checked)
-                    points += 1;
+                    q8points += 1;
         }
-        return points;
+        return q8points;
     }
 
 
@@ -185,9 +212,9 @@ public class MainActivity extends AppCompatActivity {
         CheckBox checkBoxSun3 = (CheckBox) findViewById(R.id.object3);
         boolean checkedSun3 = checkBoxSun3.isChecked();
         if (checkedSun1 && checkedSun2 && checkedSun3) {
-            points += 1;
+            q9points += 1;
         }
-        return points;
+        return q9points;
     }
 
 
@@ -200,9 +227,9 @@ public class MainActivity extends AppCompatActivity {
         switch (view.getId()) {
             case R.id.Q10A2:
                 if (checked)
-                    points += 1;
+                    q10points += 1;
         }
-        return points;
+        return q10points;
     }
 
     // ANSWER TIME!!!!
@@ -210,9 +237,18 @@ public class MainActivity extends AppCompatActivity {
     public int results(View View) {
         EditText nameField = (EditText) findViewById(R.id.name_field);
         String name = nameField.getText().toString();
-        Toast.makeText(getApplicationContext(), getString(R.string.hey) + name + getString(R.string.you) + points + getString(R.string.points), Toast.LENGTH_LONG).show();
-        points = 0;
-        return points;
+        Toast.makeText(getApplicationContext(), getString(R.string.hey) + name + getString(R.string.you) + (q1points + q2points + q3points + q4points + q5points + q6points + q7points + q8points + q9points + q10points) + getString(points), Toast.LENGTH_LONG).show();
+        q1points = 0;
+        q2points = 0;
+        q3points = 0;
+        q4points = 0;
+        q5points = 0;
+        q6points = 0;
+        q7points = 0;
+        q8points = 0;
+        q9points = 0;
+        q10points = 0;
+        return (q1points + q2points + q3points + q4points + q5points + q6points + q7points + q8points + q9points + q10points);
 
     }
 }

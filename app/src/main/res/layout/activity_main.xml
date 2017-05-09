@@ -15,37 +15,29 @@
             style="@style/HeadingImage"
             android:src="@drawable/earth2"/>
 
-
-
-
-        // Write your name
+        <!-- Write your name -->
         <TextView
             style="@style/HeadingText"
             android:text="@string/intro"/>
 
-
-        //Enter Your name here
+        <!-- Enter Your name here -->
         <EditText
             style="@style/EditText"
             android:id="@+id/name_field"
             android:hint="@string/name"/>
 
-
-
-
-
-        // QUESTION 1 - FIRST SATELLITE
-        // Q1 Image
+        <!-- QUESTION 1 - FIRST SATELLITE
+        Q1 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/sputnik"/>
 
-        // Q1 Text
+        <!-- Q1 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q1"/>
 
-        // Q1 Answers
+        <!-- Q1 Answers -->
         <RadioGroup
             xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/RadioGroup">
@@ -64,22 +56,18 @@
                 android:text="@string/q1a3"/>
         </RadioGroup>
 
-
-
-
-
-        // QUESTION 2 - SECOND MOON LANDER
-        // Q2 Image
+        <!-- QUESTION 2 - SECOND MOON LANDER
+        Q2 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/buzz"/>
 
-        // Q2 Text
+        <!-- Q2 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q2"/>
 
-        // Q2 Answers
+        <!-- Q2 Answers -->
         <RadioGroup
             xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/RadioGroup">
@@ -98,21 +86,18 @@
                 android:text="@string/q2a3"/>
         </RadioGroup>
 
-
-
-
-        // QUESTION 3 - HALEYS COMET
-        // Q3 Image
+        <!-- QUESTION 3 - HALEYS COMET
+        Q3 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/halleys"/>
 
-        // Q3 Text
+        <!-- Q3 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q3"/>
 
-        // Q3 Answers
+        <!-- Q3 Answers -->
         <RadioGroup
             xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/RadioGroup">
@@ -131,103 +116,86 @@
                 android:onClick="question3"/>
         </RadioGroup>
 
-
-
-
-
-
-        // QUESTION 4 - (Text Answer) - First Dog In Space
-        // Q4 Image
+        <!-- QUESTION 4 - (Text Answer) - First Dog In Space
+        Q4 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/laika"/>
 
-        // Q4 Text
+        <!-- Q4 Text -->
         <TextView
             style="@style/TextAnswerText"
             android:text="@string/q4"/>
 
-        // Q4 Answer with text
+        <!-- Q4 Answer with text -->
         <EditText
             style="@style/EditText"
             android:id="@+id/Q4A1"
             android:hint="@string/q4a1"
             android:onClick="question4"/>
 
-
-
-
-
-        // QUESTION 5 - FIST PERSON IN SPACE (TEXT ANSWER)
-        // Q5 Image
+        <!-- QUESTION 5 - FIRST PERSON IN SPACE (TEXT ANSWER)
+        Q5 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/yuri"/>
 
-        // Q5 Text
+        <!-- Q5 Text -->
         <TextView
             style="@style/TextAnswerText"
             android:text="@string/q5"/>
 
-        // Q5 Answer with text
+        <!-- Q5 Answer with text -->
         <EditText
             style="@style/EditText"
             android:id="@+id/Q5A1"
             android:hint="@string/q5a1"
             android:onClick="question5"/>
 
-
-
-
-
-        // QUESTION 6 - (Multi Answer Checkbox) - Sun Ray time
-        // Q6 Image
+        <!-- QUESTION 6 - (Multi Answer Checkbox) - Sun Ray time
+        Q6 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/rising"/>
 
-        // Q6 Text
+        <!-- Q6 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q6"/>
 
-        // Question 6 checkbox 1
+        <!-- Question 6 checkbox 1 -->
         <CheckBox
             style="@style/CheckBox"
-            android:id="@+id/person1"
+            android:id="@+id/sunRay1"
             android:text="@string/q6a1"
             android:onClick="question6"/>
 
-        // Question 6 checkbox 2
+        <!-- Question 6 checkbox 2 -->
         <CheckBox
             style="@style/CheckBox"
-            android:id="@+id/person2"
+            android:id="@+id/sunRay2"
             android:text="@string/q6a2"
             android:onClick="question6"/>
 
-        // Question 6 checkbox 3
+        <!-- Question 6 checkbox 3 -->
         <CheckBox
             style="@style/CheckBox"
-            android:id="@+id/person3"
+            android:id="@+id/sunRay3"
             android:text="@string/q6a3"
             android:onClick="question6"/>
 
-
-
-
-
-        // QUESTION 7 - LARGEST PLANET
-        // Q7 Image
+        <!-- QUESTION 7 - LARGEST PLANET
+        Q7 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/jupiter"/>
 
-        // Q7 Text
+        <!-- Q7 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q7"/>
 
-        // Q7 Answers
+        <!-- Answers -->
         <RadioGroup
             xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/RadioGroup">
@@ -246,22 +214,18 @@
                 android:text="@string/q7a3"/>
         </RadioGroup>
 
-
-
-
-
-        // QUESTION 8 - CLOSEST PLANET TO SUN
-        // Q8 Image
+        <!-- QUESTION 8 - CLOSEST PLANET TO SUN
+        Q8 Image  -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/mercury"/>
 
-        // Q8 Text
+        <!-- Q8 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q8"/>
 
-        // Q8 Answers
+        <!-- Q8 Answers -->
         <RadioGroup
             xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/RadioGroup">
@@ -280,12 +244,8 @@
                 android:text="@string/q8a3"/>
         </RadioGroup>
 
-
-
-
-
-        // QUESTION 9 - Sun Is Made Of?
-        // Q9 Text
+        <!-- QUESTION 9 - Sun Is Made Of?
+        Q9 Text -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/thesun1"/>
@@ -294,42 +254,39 @@
             style="@style/Text"
             android:text="@string/q9"/>
 
-        // Question 9 checkbox 1
+        <!-- Question 9 checkbox 1 -->
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/object1"
             android:text="@string/q9a1"
             android:onClick="question9"/>
 
-        // Question 9 checkbox 2
+        <!-- Question 9 checkbox 2 -->
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/object2"
             android:text="@string/q9a2"
             android:onClick="question9"/>
 
-        // Question 9 checkbox 3
+        <!-- Question 9 checkbox 3 -->
         <CheckBox
             style="@style/CheckBox"
             android:id="@+id/object3"
             android:text="@string/q9a3"
             android:onClick="question9"/>
 
-
-
-
-        // QUESTION 10 - FIRST WOMAN IN SPACE
-        // Q10 Image
+        <!-- QUESTION 10 - FIRST WOMAN IN SPACE
+        Q10 Image -->
         <ImageView
             style="@style/ImageNormal"
             android:src="@drawable/valentina"/>
 
-        // Q10 Text
+        <!-- Q10 Text -->
         <TextView
             style="@style/Text"
             android:text="@string/q10"/>
 
-        // Q10 Answers
+        <!-- Q10 Answers -->
         <RadioGroup
             xmlns:android="http://schemas.android.com/apk/res/android"
             style="@style/RadioGroup">
@@ -348,9 +305,7 @@
                 android:text="@string/q10a3"/>
         </RadioGroup>
 
-
-
-        // SCORE BUTTON
+        <!-- SCORE BUTTON -->
         <Button
             style="@style/Button"
             android:layout_gravity="center"

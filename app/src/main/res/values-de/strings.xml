@@ -22,5 +22,11 @@
     <string name="q9a1">Wasserstoff</string>
     <string name="q9a3">Kohlenstoff</string>
     <string name="results">Ergebnisse</string>
-    <string name="you">\"\u0020 ! \u0020Du hast\"</string>
+    <string name="low">\u0020Oh Nein! \u0020</string>
+    <string name="mid">\u0020Nicht Schlecht</string>
+    <string name="high">\u0020Sehr Gute!</string>
+    <string name="you">\"\u0020 ! </string>
+    <string name="youScored">! \u0020Du hast\u0020</string>
+    <string name="outOfTen">\u0020von 10!</string>
+
 </resources>
